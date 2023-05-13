@@ -356,24 +356,34 @@ header {
 .nasi_klienci__container {
   margin-top: 40px;
   padding-left: 485px;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 20px;
+  width: 100%;
+  max-width: 180px;
+  margin: 0 auto;
 }
 
 .box {
-  width: 1415px;
+  /* width: 1415px;
   padding: 14px 0;
   display: flex;
   flex-wrap: wrap;
   gap: 20px 66px;
   list-style-type: none;
-  justify-content: end;
+  justify-content: end; */
+  
 }
 
-.client__item {
-  display: grid;
+.client-item {
+  /* display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   grid-gap: 1rem;
   text-align: center;
-  padding: 0 auto;
+  padding: 0 auto; */
+  text-align: center;
+  padding: 10px;
 }
 
 .client-logo {
