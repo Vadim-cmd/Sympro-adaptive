@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+<button class="accordion"><h4 class="h4_bold">Współpraca z firmami prywatnymi oraz publicznymi</h4></button>
+<div class="panel">
+  <p class="p1_regular">Jesteśmy specjalistami w pozyskiwaniu środków finansowych na realizację projektów przez firmy prywatne i publiczne. Naszym celem jest dostarczenie kompleksowej dokumentacji niezbędnej do ubiegania się o dofinansowanie, w tym także środków z funduszy Unii Europejskiej na inwestycje i rozwój przedsiębiorstw oraz przedsięwzięcia realizowane przez podmioty sektora finansów publicznych. Współpracujemy z naszymi klientami na każdym etapie procesu, od konsultacji aż do finalizacji wniosków. Jesteśmy przekonani, że nasze doświadczenie i wiedza pozwolą Państwu osiągnąć sukces.</p>
+</div>
+
+<button class="accordion"><h4 class="h4_bold">Specjalizacja i interdyscyplinarność</h4><i class="arrow up"></i></button>
+<div class="panel">
+    <p class="p1_regular">Wierzymy, że wiedza to siła. Nasz zespół nieustannie się specjalizuje, dzięki czemu nasza firma staje się coraz bardziej interdyscyplinarna. Realizując projekty z różnych dziedzin aktywności gospodarczej, wykorzystujemy ale także czerpiemy wiedzę. Dzięki temu jesteśmy w stanie opracować najlepsze rozwiązania i doradzić naszym klientom w każdej kwestii. Bez względu na to, jaki jest cel Państwa projektu, zawsze podejmiemy się wyzwania i zrobimy wszystko, aby pomóc w jego realizacji.
+    </p>
+  
+</div>
+
+<button class="accordion"><h4 class="h4_bold">Stabilny zespół ekspertów </h4></button>
+<div class="panel">
+  <p class="p1_regular">Wyróżnia nas stabilny zespół ekspertów, którzy posiadają wieloletnie doświadczenie w szeroko rozumianym doradztwie gospodarczym. Współpraca zaowocowała imponującym potencjałem wiedzy i doświadczenia, ale także umiejętnością pracy zespołowej, tak bardzo potrzebną podczas realizacji projektów. Stawiamy na zespołowość, ponieważ tylko ona gwarantuje osiągnięcie prawdziwego efektu synergii. Dzięki naszemu zespołowi możemy zapewnić naszym klientom wsparcie na najwyższym poziomie i skutecznie realizować projekty.</p>
+</div>
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
+}
+</script> 
+
+</body>
+</html>
