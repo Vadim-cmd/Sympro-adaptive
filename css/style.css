@@ -28,7 +28,7 @@ html {
 
 body {
   background-color: var(--White);
-  /* background-image: url(/img/bg.svg); */
+  background-image: url(/img/bg.svg);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: right;
@@ -48,7 +48,6 @@ body {
   margin: 0px auto;
   padding: 0 40px;
 }
-
 
 header {
   margin-top: 10px;
@@ -86,11 +85,10 @@ header {
   text-align: left;
 }
 
-
-
 /* === about =================================== */
 
 .page__about {
+  margin-top: 40px;
 }
 
 .about__title {
@@ -154,15 +152,12 @@ color: var(--Primary3);
 
 .about-team__columns {
   margin-top: 20px;
-  padding-left: 485px;
 }
 
 .team-column__items {
   display: flex;
   gap: 40px;
 }
-
-
 
 .person {
   display: flex;
@@ -366,15 +361,16 @@ color: var(--Primary3);
 
 /* ====== nasi klienci======================================================================== */
 .page__nasi_klienci {
+  margin-top: 40px;
+
 }
 
 .nasi_klienci__title {
 }
 
 .nasi_klienci__container {
-  width: 1900px;
-  height: 280px;
-  padding: 0px 14px 14px 485px;
+  margin-top: 40px;
+  padding-left: 485px;
 }
 
 .box {
@@ -387,25 +383,21 @@ color: var(--Primary3);
   justify-content: end;
 }
 
-
-
 .client__item {
-  background: var(--Primary3);
-  color: #fff;
-  border-radius: 6px;
-  display: flex;
-  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 1rem;
   text-align: center;
-  justify-content: center;
-  padding: 31px 0;
-  width: 176px;
+  padding: 0 auto;
 }
 
-
-
-  
-
-
+.client-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: auto;
+}
 
 /* ===== kontakt ================================ */
 .page__kontakt {
@@ -461,8 +453,7 @@ color: var(--Primary3);
 
 .map-img {
   margin-top: 20px;
-  width: 100%;
-  
+  width: 100%; 
 }
 
 
@@ -661,7 +652,8 @@ color: var(--Primary3);
   }
 
   .page__co_robimy {
-    margin-bottom: 39px;
+    margin-top: 40px;
+
   }
 
   .nasi_klienci__title {
@@ -755,13 +747,13 @@ color: var(--Primary3);
   .about-team__columns {
     padding: 0;
     display: flex;
-    justify-content: end;
+    justify-content: center;
   }
 
   .team-column__items {
     display: flex;
     flex-direction: column;
-    width: 347px;
+    width: 445px;
     gap: 20px;
   }
 
@@ -772,7 +764,6 @@ color: var(--Primary3);
   .person {
     border-top: none;
     margin-top: 22px;
-
   }
 
   .person__name {
@@ -863,7 +854,7 @@ color: var(--Primary3);
   }
 
   .page__co_robimy {
-    margin-bottom: 39px;
+    margin-top: 40px;
   }
 
   .nasi_klienci__title {
@@ -896,7 +887,7 @@ color: var(--Primary3);
   }
 
   .client__item {
-    width: 164px;
+    width: fit-content;
   }
 
   .kontakt__container {
