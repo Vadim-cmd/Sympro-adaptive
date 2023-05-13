@@ -355,14 +355,18 @@ header {
 
 .nasi_klienci__container {
   margin-top: 40px;
+  width: 100%;
   padding-left: 485px;
+}
+
+.box-container {
   display: grid;
+  position: relative;
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: repeat(3, 1fr);
+  align-content: start;
   gap: 20px;
-  width: 100%;
   max-width: 180px;
-  margin: 0 auto;
 }
 
 .box {
