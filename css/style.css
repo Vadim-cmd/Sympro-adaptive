@@ -1008,7 +1008,6 @@ header {
   margin-top: 20px;
   padding-top: 18px;
   padding-bottom: 18px;
-
 }
 
 .active,
@@ -1048,7 +1047,6 @@ header {
 }
 
 .panel {
-  background-color: white;
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
@@ -1057,7 +1055,7 @@ header {
 button {
   font-family: "Arial";
   font-style: normal;
-  width: 1415px;
+  width: 821px;
   font-weight: 700;
   font-size: 24px;
   line-height: 30px;
@@ -1065,7 +1063,7 @@ button {
   align-items: center;
   justify-content: space-between;
   color: #133079; 
-  background-color: #fff;
+  background-color: transparent;
 }
 
 
