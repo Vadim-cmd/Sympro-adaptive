@@ -221,24 +221,6 @@
             </p>
           </div>
           <div class="line"></div>
-
-      
-          <script>
-            var acc = document.getElementsByClassName("accordion");
-            var i;
-      
-            for (i = 0; i < acc.length; i++) {
-              acc[i].addEventListener("click", function () {
-                this.classList.toggle("active");
-                var panel = this.nextElementSibling;
-                if (panel.style.maxHeight) {
-                  panel.style.maxHeight = null;
-                } else {
-                  panel.style.maxHeight = panel.scrollHeight + "px";
-                }
-              });
-            }
-          </script>
           
           <button class="accordion">
             <h4 class="h4_bold">Innowacyjność</h4>
@@ -524,6 +506,22 @@
             </p>
           </div>
         </div>
+        <script>
+          var acc = document.getElementsByClassName("accordion");
+          var i;
+    
+          for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function () {
+              this.classList.toggle("active");
+              var panel = this.nextElementSibling;
+              if (panel.style.maxHeight) {
+                panel.style.maxHeight = null;
+              } else {
+                panel.style.maxHeight = panel.scrollHeight + "px";
+              }
+            });
+          }
+        </script>
       
 
       <section class="page__nasi_klienci">
