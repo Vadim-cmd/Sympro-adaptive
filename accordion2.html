@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/reset.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="container">
+       
+          <div class="line"></div>
+
+      
+          <script type="text/javascript" src="http://code.jquery.com/jquery-1.6.2.min.js"></script>
+		<style type="text/css">
+			.UpMenus {
+				position:absolute;
+				bottom:50%;
+				left:50%;
+				width:812px;
+				height:126px;
+				margin:63px 0px 0px -50px;
+				padding:0px;
+				border:0px;
+				list-style-type:none;
+				overflow:visible;
+			}
+			.UpMenus li {
+				position:relative;
+				float:left;
+				width:100px;
+				height:16px;
+				padding:2px 0px;
+				border-bottom:0px;
+				background:#fff;
+				font:normal 12px sans-serif;
+				text-align:center;
+				overflow:visible;
+				cursor:pointer;
+				cursor:hand;
+			}
+			.UpMenus li:hover {
+				color:#fff;
+			}
+			.UpMenus li ol {
+				position:absolute;
+				bottom:21px;
+				width:98px;
+				height:0px;
+				margin:0px;
+				padding:0px;
+				border-top:0px;
+				border-bottom:0px;
+				list-style-type:none;
+				overflow:hidden;
+			}
+			.UpMenus li ol.Up {
+			}
+
+			.UpMenus li ol li {
+				color:#000;
+				border:0px;
+			}
+			.UpMenus li ol li:hover {
+				
+			}
+		</style>
+		<script type="text/javascript">
+			$(function(){
+				$('.UpMenus > li').click(function(){
+					var ol = $(this).children('ol');
+					var h = ol.height()?0:ol.children('li').length*21;
+					var d = 0;
+					ol.parent().parent().children('li').each(function(){
+						if (d) {
+							$(this).children('ol').animate({height:'0px'},800,function(){$(this).removeClass('Up');});
+							$(this).animate({top:'0px'},800);
+						} else if (!$(this).is(ol.parent())) {
+							$(this).children('ol').animate({height:'0px'},800,function(){$(this).removeClass('Up');});
+							$(this).animate({top:(h?-h:'0')+'px'},800);
+						} else {
+							if (h) ol.addClass('Up');
+							ol.animate({height:h+'px'},800);
+							$(this).animate({top:'0px'},800,function(){if(!h){ol.removeClass('Up')}});
+							d = 1;
+						}
+					});
+				});
+			});
+		</script>
+		<ul class="UpMenus">
+			<li>
+				<h4 class="h4_bold">Współpraca z firmami prywatnymi oraz publicznymi</h4>
+            <div class="line"></div>
+
+				<ol>
+					<li class="p1_regular">Jesteśmy specjalistami w pozyskiwaniu środków finansowych na realizację
+                        projektów przez firmy prywatne i publiczne. Naszym celem jest
+                        dostarczenie kompleksowej dokumentacji niezbędnej do ubiegania się o
+                        dofinansowanie, w tym także środków z funduszy Unii Europejskiej na
+                        inwestycje i rozwój przedsiębiorstw oraz przedsięwzięcia realizowane
+                        przez podmioty sektora finansów publicznych. Współpracujemy z naszymi
+                        klientami na każdym etapie procesu, od konsultacji aż do finalizacji
+                        wniosków. Jesteśmy przekonani, że nasze doświadczenie i wiedza pozwolą
+                        Państwu osiągnąć sukces.</li>
+				</ol>
+                
+			</li>
+			
+			</li>
+		</ul>
+          
+          
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
