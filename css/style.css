@@ -15,12 +15,7 @@
 }
 
 html {
-  background-color: var(--White);
-  background-image: url(/img/bg.svg);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: right;
-  background-size: 60%;
+  
 }
 
 *,
@@ -31,11 +26,12 @@ html {
   padding: 0;
 }
 
-.card-header .fa {
-  transition: .3s transform ease-in-out;
-}
-.card-header .collapsed .fa {
-  transform: rotate(90deg);
+body {
+  background-color: var(--White);
+  background-image: url(/img/bg.svg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: right;
 }
 
 
