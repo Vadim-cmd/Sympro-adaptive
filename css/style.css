@@ -28,9 +28,12 @@ html {
 body {
   background-color: var(--White);
   background-image: url(/img/bg.svg);
+  background-size: 1440px;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-position: right;
+  background-position: right; 
+  background-attachment: scroll;
+
 }
 
 .wrapper {
@@ -316,12 +319,9 @@ header {
   height: 500px;
 }
 
-.caret-right {
-  left: 37.5%;
-  right: 8.33%;
-  top: 79.17%;
-  bottom: -4.17%;
-  transform: rotate(90deg);
+.caret-right{
+  height: 19px;
+  
 }
 
 .p6 {
