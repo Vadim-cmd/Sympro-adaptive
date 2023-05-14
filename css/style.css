@@ -1131,54 +1131,80 @@ button {
 
 
   /* ============ */
- /* The sidepanel menu */
-.sidepanel {
-  height: 250px; /* Specify a height */
-  width: 0; /* 0 width - change this with JavaScript */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Stay on top */
-  top: 0;
-  left: 0;
-  background-color: #111; /* Black*/
-  overflow-x: hidden; /* Disable horizontal scroll */
-  padding-top: 60px; /* Place content 60px from the top */
-  transition: 0.5s; /* 0.5 second transition effect to slide in the sidepanel */
-}
-
-/* The sidepanel links */
-.sidepanel a {
-  padding: 8px 8px 8px 32px;
+  * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: inherit;
   text-decoration: none;
-  font-size: 25px;
-  color: #818181;
-  display: block;
-  transition: 0.3s;
+  list-style: none;
+  font-family: "Open Sans", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
-
-/* When you mouse over the navigation links, change their color */
-.sidepanel a:hover {
-  color: #f1f1f1;
+.main-nav {
+  display: flex;
+  height: 8vh;
+  justify-content: space-between;
+  align-items: center;
+  color: #daf8e3;
+  background: #005582;
 }
-
-/* Position and style the close button (top right corner) */
-.sidepanel .closebtn {
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
+.menu-logo {
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-size: 1.25rem;
+  padding: 0 2rem;
 }
-
-/* Style the button that is used to open the sidepanel */
-.openbtn {
-  font-size: 20px;
+.nav-links {
+  display: flex;
+  width: 40%;
+  justify-content: space-around;
+}
+.burger {
+  display: none;
+  padding: 0.5rem;
   cursor: pointer;
-  background-color: #111;
-  color: white;
-  padding: 10px 15px;
-  border: none;
+}
+.menu-line {
+  height: 2px;
+  width: 35px;
+  margin: 0.5rem 0;
+  background: #daf8e3;
+  transition: transform 0.75s ease, opacity 0.75s ease;
 }
 
-.openbtn:hover {
-  background-color: #444;
+.main-nav.show .line1 {
+  transform: translate(-10px) rotate(45deg) translate(15px);
+}
+.main-nav.show .line2 {
+  opacity: 0;
+}
+.main-nav.show .line3 {
+  transform: translate(-10px) rotate(-45deg) translate(15px);
+}
+.main-nav.show .nav-links {
+  transform: translateX(0%);
+}
+@media screen and (max-width: 800px) {
+  .nav-links {
+    width: 60%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .burger {
+    display: block;
+  }
+  .nav-links {
+    position: fixed;
+    top: 8vh;
+    right: 0;
+    height: 92vh;
+    width: 50%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background: #005582;
+    transform: translateX(100%);
+    transition: transform 1s ease;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.5);
+  }
 }

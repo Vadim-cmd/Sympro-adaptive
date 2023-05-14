@@ -16,12 +16,11 @@ for (i = 0; i < acc.length; i++) {
 
 // ========menu
 
-/* Set the width of the sidebar to 250px (show it) */
-function openNav() {
-  document.getElementById("mySidepanel").style.width = "250px";
-}
-
-/* Set the width of the sidebar to 0 (hide it) */
-function closeNav() {
-  document.getElementById("mySidepanel").style.width = "0";
+document.addEventListener('DOMContentLoaded', nav)
+function nav(){
+    const burger = document.querySelector('.burger');
+    const nav = document.querySelector('.main-nav');
+    burger.addEventListener('click', ()=>{
+        nav.classList.toggle('show')
+    })
 }
