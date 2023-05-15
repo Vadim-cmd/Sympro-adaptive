@@ -83,6 +83,14 @@ header {
   text-align: left;
 }
 
+main {
+  background-color: var(--White);
+  background-image: url(/img/bg.svg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: right;
+  background-attachment: scroll;
+}
 /* === about =================================== */
 
 .page__about {
