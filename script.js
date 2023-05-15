@@ -12,15 +12,9 @@ for (i = 0; i < acc.length; i++) {
     } 
   });
 }
-
-
-// ========menu
-
-document.addEventListener('DOMContentLoaded', nav)
-function nav(){
-    const burger = document.querySelector('.burger');
-    const nav = document.querySelector('.main-nav');
-    burger.addEventListener('click', ()=>{
-        nav.classList.toggle('show')
-    })
+// ==========
+function menuOnClick() {
+  document.getElementById("menu-bar").classList.toggle("change");
+  document.getElementById("nav").classList.toggle("change");
+  document.getElementById("menu-bg").classList.toggle("change-bg");
 }

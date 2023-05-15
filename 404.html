@@ -9,31 +9,33 @@
     <link rel="stylesheet" href="/css/style.css" />
   </head>
   <body>
-    
     <div class="wrapper">
       <header class="header">
         <div class="header__inner">
-          <a href="#" class="logo">
+          <a href="/Index.html" class="logo">
             <img src="/img/Sympro_logo.svg" alt="logo" />
           </a>
+
+          <!-- =================== -->
           
-<!-- =================== -->
-          <nav class="main-nav">
-            <div class="menu-logo">Nav</div>
-            <ul class="nav-links">
+          <div id="menu">
+            <div id="menu-bar" onclick="menuOnClick()">
+              <div id="bar1" class="bar1"></div>
+              <div id="bar2" class="bar2"></div>
+              <div id="bar3" class="bar3"></div>
+            </div>
+            <nav class="nav" id="nav">
+              <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="#">About</a></li>
                 <li><a href="#">Contact</a></li>
-                <li><a href="#">Connect</a></li>
-           </ul>
-           <div class="burger">
-                <div class="menu-line line1"></div>
-                <div class="menu-line line2"></div>
-                <div class="menu-line line3"></div>
-           </div>
-        </nav>
-    
-   <!-- ========================       -->
+                <li><a href="#">Blog</a></li>
+              </ul>
+            </nav> 
+          </div>
+          
+          <div class="menu-bg" id="menu-bg"></div>
+ 
         </div>
       </header>
       <div class="error__title">
@@ -48,11 +50,16 @@
         <div class="double-line">
           <div class="long-line"></div>
           <div class="error-line"></div>
-        </div>   
-        <p class="h4_regular">Link, w który kliknąłeś, może być błędny.<br>
-          Jeśli problem nie dotyczy powyższej kwestiii, możliwe, że leży on po naszej stronie.</p>
+        </div>
+        <p class="h4_regular">
+          Link, w który kliknąłeś, może być błędny.<br />
+          Jeśli problem nie dotyczy powyższej kwestiii, możliwe, że leży on po
+          naszej stronie.
+        </p>
         <div class="error__link">
-          <a href="/Index.html" style="color: #133079;">Przejdź do strony głównej</a>
+          <a href="/Index.html" style="color: #133079"
+            >Przejdź do strony głównej</a
+          >
           <img src="/img/caret-right-404.svg" alt="caret" class="caret-right" />
         </div>
       </div>
@@ -68,6 +75,6 @@
         <div class="number_3">REGON 302197316</div>
       </div>
     </footer>
+    <script src="/script.js"></script>
   </body>
-  
 </html>
