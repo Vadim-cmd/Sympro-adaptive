@@ -59,6 +59,9 @@ header {
 
 }
 
+.logo {
+  z-index: 5;
+}
 
 .title__wrap {
   max-width: 1440px;
@@ -324,6 +327,7 @@ header {
 }
 
 .h2_regular {
+  display: flex;
   margin-top: 40px;
   font-family: "Arial";
   font-size: 60px;
