@@ -1173,9 +1173,10 @@ button {
   width: 60px;
   height: 30px;
   margin: 30px 20px 20px 20px;
-  margin-left: auto;
   padding: 30px;
   cursor: pointer;
+  
+  
 }
 
 .bar1 {
@@ -1220,7 +1221,6 @@ button {
   transition: 0.3s ease;
   display: none;
   height: 100vh;
-  width: 906px;
 }
 
 .nav ul {
@@ -1249,7 +1249,7 @@ button {
 .menu-bg,
 #menu {
   display: flex;
-  justify-content: flex-end;
+  justify-content: flex-start;
 }
 
 .menu-bg {
@@ -1263,12 +1263,14 @@ button {
 
 .change {
   display: block;
+  
 }
 
 .change#menu {
-  border-left: 1px solid #106fae;
   display: flex;
   flex-direction: column;
+  border-left: 2px solid #0da7dc;
+
 }
 
 .change .bar1,
