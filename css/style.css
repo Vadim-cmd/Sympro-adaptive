@@ -56,11 +56,12 @@ header {
 .header__inner {
   display: flex;
   justify-content: space-between;
-
 }
 
 .logo {
   z-index: 5;
+  margin: 0;
+  padding: 0;
 }
 
 .title__wrap {
