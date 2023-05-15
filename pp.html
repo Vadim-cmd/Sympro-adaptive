@@ -12,14 +12,28 @@
   <div class="wrapper">
     <header class="header">
         <div class="header__inner">
-          <a href="#" class="logo">
+          <a href="/Index.html" class="logo">
             <img src="/img/Sympro_logo.svg" alt="logo" />
           </a>
-          <nav class="menu">
-            <a href="#" class="menu__burger">
-              <img src="/img/big_svg.svg" alt="menu__burger" />
-            </a>
-          </nav>
+          <!-- =================== -->
+          
+          <div id="menu">
+            <div id="menu-bar" onclick="menuOnClick()">
+              <div id="bar1" class="bar1"></div>
+              <div id="bar2" class="bar2"></div>
+              <div id="bar3" class="bar3"></div>
+            </div>
+            <nav class="nav" id="nav">
+              <ul>
+                <li><a href="/Index.html#page__about">O Nas</a></li>
+                <li><a href="/Index.html#page__co_robimy">Co robimy</a></li>
+                <li><a href="/Index.html#page__nasi_klienci">Nasi klienci</a></li>
+                <li><a href="/Index.html#page__kontakt">Kontakt</a></li>
+              </ul>
+            </nav> 
+          </div>
+          
+          <div class="menu-bg" id="menu-bg"></div>
         </div>
     </header>
         <div class="pp__title">
@@ -54,6 +68,7 @@
         <div class="number_3">REGON 302197316</div>
     </div>   
 </footer> 
+<script src="/script.js"></script>
 </body>
 
 </html>

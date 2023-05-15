@@ -590,11 +590,11 @@ header {
   }
 
   .co_robimy__title {
-    width: 171px;
+    max-width: 171px;
   }
 
   .line {
-    width: 817px;
+    max-width: 817px;
     margin: 0;
   }
 
