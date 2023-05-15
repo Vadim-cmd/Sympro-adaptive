@@ -27,25 +27,23 @@ html {
 
 body {
   background-color: var(--White);
-  background-image: url(/img/bg.svg);
+  /* background-image: url(/img/bg.svg); */
   background-size: 1440px;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: right;
   background-attachment: scroll;
+  overflow-x: hidden;
 }
 
-/* .wrapper {
+.wrapper {
   display: flex;
-  min-height: 100%;
-  flex-direction: column;
-  max-width: fit-content;
   justify-content: center;
-} */
+} 
 
 .container {
-  max-width: 1900px;
-  margin: 0 auto;
+  width: 1900px;
+  margin: 0;
   padding: 0 40px;
 }
 
@@ -84,7 +82,7 @@ header {
 
 main {
   background-color: var(--White);
-  background-image: url(/img/bg.svg);
+  /* background-image: url(/img/bg.svg); */
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: right;
@@ -739,6 +737,36 @@ main {
 /* adaptive 428px */
 
 @media screen and (max-width: 1199px) {
+  .footer {
+    width: 348px;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .company-name {
+    width: 250px;
+
+  }
+
+
+  .line-white {
+    width: 1152px;
+    margin: 0;
+  }
+
+  .numbers {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .number_1,
+  .number_2,
+  .number_3 {
+    padding: 5px 0;
+  }
+
   .container {
     width: 348px;
     padding: 0 40px;
@@ -1230,9 +1258,10 @@ line-height: 60px;
 }
 
 .menu-bg, #menu {
+  display: flex;
+  justify-content: flex-end;
   top: 300;
   left: 500;
-  position: absolute;
 }
 
 .menu-bg {
