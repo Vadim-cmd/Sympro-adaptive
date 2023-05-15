@@ -35,18 +35,17 @@ body {
   background-attachment: scroll;
 }
 
-.wrapper {
-  padding: 0px 29px 0px 40px;
+/* .wrapper {
   display: flex;
   min-height: 100%;
-  overflow: hidden;
   flex-direction: column;
   max-width: fit-content;
-}
+  justify-content: center;
+} */
 
 .container {
   max-width: 1900px;
-  margin: 0px auto;
+  margin: 0 auto;
   padding: 0 40px;
 }
 
@@ -417,6 +416,7 @@ main {
 
 /* ===== kontakt ================================ */
 .page__kontakt {
+
 }
 
 .kontakt__title {
@@ -424,7 +424,10 @@ main {
 
 .kontakt__container {
   margin-top: 40px;
+  width: 1415px;
   padding-left: 485px;
+
+
 }
 
 .container__title {
@@ -555,10 +558,10 @@ main {
   .container {
     width: 1116px;
     padding: 0 42px;
+    margin: 0 auto;
   }
 
   .title__wrap {
-    width: 1200px;
     padding-right: 100px;
   }
 
@@ -729,7 +732,7 @@ main {
   .number_3 {
     padding: 5px 0;
   }
-  
+
 }
 
 
@@ -739,6 +742,7 @@ main {
   .container {
     width: 348px;
     padding: 0 40px;
+    margin: 0 auto;
   }
 
   .title__wrap {
@@ -779,7 +783,7 @@ main {
   .team-column__items {
     display: flex;
     flex-direction: column;
-    width: 445px;
+    width: 347px;
     gap: 20px;
   }
 
@@ -923,7 +927,12 @@ main {
   }
 
   .client__item {
-    width: fit-content;
+    width: 164px;
+  }
+
+  .client-item > img {
+    width: 100%;
+    object-fit: cover;
   }
 
   .kontakt__container {
@@ -1136,16 +1145,16 @@ button {
   top: 0px;
   right: 0px;
   z-index: 2;
-  width: 573px;
   background-color: #fff;
+
 }
 
 #menu-bar {
   width: 60px;
   height: 30px;
   margin: 30px 20px 20px 20px;
+  margin-left: auto;
   padding: 30px;
-  margin-left: 410px;
   cursor: pointer;
 }
 
@@ -1190,10 +1199,15 @@ button {
 .nav {
   transition: 0.3s ease;
   display: none;
+  height: 100vh;
+  width: 906px;
+  margin-top: 106px;
+
+
 }
 
 .nav ul {
-  padding: 0 22px;
+  padding: 0 40px;
 }
 
 .nav li {
@@ -1234,6 +1248,10 @@ line-height: 60px;
   display: block;
 }
 
+.change#menu {
+  border-left: 1px solid #106FAE;
+}
+
 .change .bar1, .bar2, .bar3 {
   background-color: var(--Primary3);
 }
@@ -1254,4 +1272,77 @@ line-height: 60px;
   width: 520px;
   height: 460px;
   transform: translate(-60%,-30%);
+}
+
+@media screen and (max-width: 1979px) {
+  .double-line {
+    width: 861px;
+  }
+
+  .error__container {
+    display: flex;
+    width: 861px;
+    flex-direction: column;
+  }
+
+  .error__title {
+    width: 861px;
+  }
+
+  .h4_regular {
+    width: 861px;
+  }
+
+    .line--pp {
+    width: 1116px;
+  }
+
+  .pp__container {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items:flex-end;
+  }
+
+  .pp_text {
+    margin: 0;
+  }
+
+}
+
+@media screen and (max-width: 1199px) {
+  .double-line {
+    width: 347px;
+  }
+
+  .error__container {
+    display: flex;
+    width: 347px;
+    flex-direction: column;
+  }
+
+  .error__title {
+    width: 347px;
+  }
+
+  .h4_regular {
+    width: 347px;
+  }
+
+  .line--pp {
+    width: 347px;
+  }
+
+  #nav {
+    width: 100vw;
+  }
+
+
+
+
+
+
+
+
+
 }
