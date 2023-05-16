@@ -1120,7 +1120,7 @@ main {
 }
 
 .accordion:after {
-  content: url(/img/caret-up.svg);
+  content: url(/img/caret-down.svg);
   font-weight: bold;
   float: right;
   margin-left: 5px;
@@ -1128,7 +1128,7 @@ main {
 }
 
 .active:after {
-  content: url(/img/caret-down.svg);
+  content: url(/img/caret-up.svg);
   font-family: "Arial";
   font-style: normal;
   font-weight: 400;
