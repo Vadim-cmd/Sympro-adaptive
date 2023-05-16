@@ -1164,7 +1164,6 @@ button {
 /* ===========menu burger= */
 #menu {
   display: flex;
-  position: fixed;
   top: 0px;
   right: 0px;
   z-index: 2;
@@ -1177,8 +1176,7 @@ button {
   margin: 30px 20px 20px 20px;
   padding: 30px;
   cursor: pointer;
-  
-  
+  align-self: end;
 }
 
 .bar1 {
@@ -1286,11 +1284,11 @@ button {
 }
 
 .change #bar2 {
-  opacity: 0;
+  display: none;
 }
 
 .change #bar3 {
-  transform: translateY(-6px) rotateZ(45deg);
+  transform: translateY(-3px) rotateZ(45deg);
 }
 
 .change-bg {
