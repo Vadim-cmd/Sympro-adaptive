@@ -15,16 +15,19 @@
 }
 
 html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
 }
-
+/* 
 *,
 *::after,
 *::before {
-  /* box-sizing: inherit;
+  box-sizing: inherit;
   margin: 0 auto;
-  padding: 0 auto; */
+  padding: 0 auto;
 
-}
+} */
 
 body {
   background-color: var(--White);
@@ -47,6 +50,7 @@ body {
   width: 1900px;
   margin: 0px;
   padding: 0 40px;
+
 }
 
 header {
@@ -105,8 +109,6 @@ main {
 
 .about__description {
 }
-
-
 
 .p1 {
   padding: 0px, 0px, 20px, 0px;
@@ -555,8 +557,8 @@ main {
 @media screen and (max-width: 1979px) {
   .container {
     width: 1116px;
-    padding: 0 42px;
-    margin: 0 auto;
+    /* padding: 0 42px;
+    margin: 0 auto; 17*/
   }
 
   .title__wrap {
@@ -619,7 +621,7 @@ main {
 
   .line {
     max-width: 817px;
-    margin: 0;
+    margin: 0px;
   }
 
   .co_robimy__container {
@@ -766,13 +768,12 @@ main {
 
   .container {
     width: 348px;
-    padding: 0 40px;
-    margin: 0 auto;
+    /* padding: 0 40px;
+    margin: 0 auto; 17 */
   }
 
   .title__wrap {
     width: 348px;
-
     padding: 98px 0;
   }
 
@@ -1094,7 +1095,7 @@ main {
 }
 
 .pp_text {
-  margin: 0 auto;
+  /* margin: 0 auto;17 */
 }
 
 /* ======= accordion ================ */
